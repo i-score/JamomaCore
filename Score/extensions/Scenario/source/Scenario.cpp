@@ -1835,7 +1835,7 @@ TTErr Scenario::TimeProcessLimit(const TTValue& inputValue, TTValue& outputValue
                 // retreive solver constraint relative to the time process
                 it = mConstraintsMap.find(aTimeProcess.instance());
                 
-                if (it != mRelationsMap.end())
+                if (it != mConstraintsMap.end())
                 {
                     SolverConstraintPtr constraint = SolverConstraintPtr(it->second);
                     sErr = constraint->limit(TTUInt32(inputValue[1]), TTUInt32(inputValue[2]));
