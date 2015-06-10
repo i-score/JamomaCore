@@ -31,7 +31,7 @@ includes:
   - ../../../Modular/library/SchedulerLib
   
   # to include gecode solver library
-  - /Library/Frameworks/gecode.framework/Headers
+  - /usr/local/include/gecode
   
   # to use xml file format
   - /usr/include/libxml2
@@ -43,8 +43,16 @@ libraries:
   - SCORE
   
   # to include gecode solver library
-  - /Library/Frameworks/gecode.framework/gecode
-  
+  - /usr/local/lib/libgecodedriver.dylib
+  - /usr/local/lib/libgecodeflatzinc.dylib
+  - /usr/local/lib/libgecodefloat.dylib
+  - /usr/local/lib/libgecodeint.dylib
+  - /usr/local/lib/libgecodekernel.dylib
+  - /usr/local/lib/libgecodeminimodel.dylib
+  - /usr/local/lib/libgecodesearch.dylib
+  - /usr/local/lib/libgecodeset.dylib
+  - /usr/local/lib/libgecodesupport.dylib
+
   # to link with the xml library
   - mac /usr/lib/libxml2.dylib
   #- win 
