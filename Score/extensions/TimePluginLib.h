@@ -56,7 +56,7 @@ thisTTClass :: thisTTClass (const TTValue& arguments) : TimeContainerPlugin(argu
  
  @see TimePluginLib, TTTimeProcess
  */
-class TimeContainerPlugin : public TTTimeContainer {
+class TTSCORE_EXPORT TimeContainerPlugin : public TTTimeContainer {
     
     TTCLASS_SETUP(TimeContainerPlugin)
     
